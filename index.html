@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <div class="calc-container">
+            <section class="text-area">
+                <span id="number-shown">0</span>
+            </section>
+            <section class="btn-container">
+                <div class="btn-row">
+                    <button id="clr" class="btn double">C</button>
+                    <button id="del" class="btn">←</button>
+                    <button id="div" class="btn" onclick="operation('/')">÷</button>
+                </div>
+                <div class="btn-row">
+                    <button class="btn no-btn" onclick="numbersFunction(7)">7</button>
+                    <button class="btn no-btn" onclick="numbersFunction(8)">8</button>
+                    <button class="btn no-btn" onclick="numbersFunction(9)">9</button>
+                    <button id="mul" class="btn" onclick="operation('*')">x</button>
+                </div>
+                <div class="btn-row">
+                    <button class="btn no-btn" onclick="numbersFunction(4)">4</button>
+                    <button class="btn no-btn" onclick="numbersFunction(5)">5</button>
+                    <button class="btn no-btn" onclick="numbersFunction(6)">6</button>
+                    <button id="sub" class="btn" onclick="operation('-')">-</button>
+                </div>
+                <div class="btn-row">
+                    <button class="btn no-btn" onclick="numbersFunction(1)">1</button>
+                    <button class="btn no-btn" onclick="numbersFunction(2)">2</button>
+                    <button class="btn no-btn" onclick="numbersFunction(3)">3</button>
+                    <button id="add" class="btn" onclick="operation('+')">+</button>
+                </div>
+                <div class="btn-row">
+                    <button id="zero" class="btn no-btn triple" onclick="numbersFunction(0)">0</button>
+                    <button id="res" class="btn">=</button>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

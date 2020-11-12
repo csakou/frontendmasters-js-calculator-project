@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #444448;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calc-container {
+    width: 350px;
+    height: 500px;
+    background: black;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.btn {
+    min-width: calc((350px/4) - 0.75px);
+    cursor: pointer;
+    border: none;
+    font-family: "Helvetica", monospace;
+    font-size: 2rem;
+    font-weight: normal;
+    background: hsl(0, 0%, 80%);
+}
+
+.btn:last-child {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background: hsl(30, 100%, 50%);
+}
+
+.btn:hover {
+    background: hsl(0, 0%, 90%);
+}
+
+.btn:last-child:hover {
+    background: hsl(30, 100%, 70%)
+}
+
+.btn:active,
+.btn:focus {
+    outline: none;
+    border: 3px solid rgba(80, 80, 255, 0.8);
+}
+
+.btn:active {
+    background: hsl(0, 0%, 60%);
+}
+
+.btn:last-child:active {
+    background: hsl(30, 100%, 40%)
+}
+
+.double {
+    width: calc((350px/4)*2 - 0.5px);
+}
+
+.triple {
+    width: calc((350px/4)*3 - 0.25px);
+}
+
+.text-area {
+    min-width: 100%;
+    min-height: 15%;
+    color: white;
+    font-family: "Courier New", monospace;
+    font-size: 3rem;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow-x: hidden;
+}
+
+.btn-container {
+    min-width: 100%;
+    min-height: 85%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: stretch;
+}
+
+.btn-row {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-bottom: 1px;
+}
+
+.btn-row:last-child {
+    margin: 0;
+    padding: 0;
+}

@@ -65,6 +65,7 @@ function res() {
             case "/":
                 if (currentNumber !== "0"){
                     firstNumber /= parseInt(currentNumber, 10);
+                    firstNumber = firstNumber.toFixed(2);
                 }
                 break;
             case "*":
